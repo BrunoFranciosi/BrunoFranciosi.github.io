@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body {
+    font-family: 'Lexend', cursive;
+}
+
+header {
+    background-color: #3a96bd;
+    min-height: 20px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav > a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
