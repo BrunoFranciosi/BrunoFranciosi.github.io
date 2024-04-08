@@ -4,10 +4,11 @@
 
 body {
     font-family: 'Lexend', cursive;
+    background-color: #1D3331;
 }
 
 header {
-    background-color: #3a96bd;
+    background-color: #545253;
     min-height: 20px;
     padding: 16px;
     border-radius: 10px;
@@ -18,7 +19,7 @@ nav {
 }
 
 nav > a {
-    color: black;
+    color: white;
     padding: 8px;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -36,4 +37,51 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    color: white;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #545253;
+    border-radius: 10px;
+}
+
+#skills > h2, h4 {
+    display: block;
+    width: 100%;
+}
+
+#skills .category {
+    margin-top: 2px;
+}
+
+#skills .category div {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+#skills .category div img {
+    width: 50px;
+    height: auto;
+}
+
+#skills .category div span {
+    display: block;
+}
+
+#skills > div {
+    text-align: center;
+    margin: 10px;
+}
+
+#skills > div > img{
+    width: 50px;
+    height: auto;
+}
+
+#skills > div > span {
+    display: block;
 }
