@@ -14,6 +14,9 @@ header {
     border-radius: 10px;
 }
 
+
+
+
 nav {
     text-align: right;
 }
@@ -28,6 +31,13 @@ nav > a {
 nav > a:hover {
     background-color: #f2f2f2;
     border-radius: 5px;
+}
+
+#sobre {
+    flex-wrap: wrap;
+    background-color: #545253;
+    border-radius: 10px;
+    padding-left: 20px;
 }
 
 p {
