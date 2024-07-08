@@ -2,60 +2,122 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body {
+* {
     font-family: 'Lexend', cursive;
-    background-color: #1D3331;
+    
+}
+
+body {
+    background-color: #D6CEC9;
 }
 
 header {
-    background-color: #545253;
-    min-height: 20px;
-    padding: 16px;
-    border-radius: 10px;
+    background-color: #8F8B89;
+    border-radius: 15px;
+    padding: 2px;
+    width: 80%;
+    margin: 20px auto 40px auto;
 }
 
-
-
-
-nav {
-    text-align: right;
-}
-
-nav > a {
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-
-nav > a:hover {
-    background-color: #f2f2f2;
-    border-radius: 5px;
-}
-
-#sobre {
+nav ul {
+    display: flex;
+    justify-content: right;
     flex-wrap: wrap;
-    background-color: #545253;
-    border-radius: 10px;
-    padding-left: 20px;
+    max-width: 100%;
+    padding: 0;
+    margin: 8px;
+    margin-right: 20px;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: white;
+    transition-duration: 0.5;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #D1FFFE;
+    border-radius: 5px;
+    color: #0A8F8D;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+section.home {
+    background-color: #8F8B89;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+section.home img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.home-text {
+    margin-left: 20px;
+}
+
+.home-text h1 {
+    color: #D1FFFE;
+}
+
+button.contato {
+    background-color: #62DBD8;
+    border-radius: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+section.about {
+    background-color: #8F8B89;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px auto 40px auto;
+}
+
+
+.about-text {
+    margin-left: 20px;
+    text-align: justify;
+    color: white;
+    margin-right: 20px;
+}
+
+.skills h2 {
+    /*margin-left: 20px;*/
+    color: white;
+    text-align: center;
 }
 
 #skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #545253;
-    border-radius: 10px;
+    background-color: #8F8B89;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 #skills > h2, h4 {
