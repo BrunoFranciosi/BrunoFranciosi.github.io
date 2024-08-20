@@ -4,54 +4,71 @@
 
 * {
     font-family: 'Lexend', cursive;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    background-color: #D6CEC9;
+body, html {
+    background-color: lightgray;
 }
 
 header {
-    background-color: #8F8B89;
-    border-radius: 15px;
-    padding: 2px;
-    width: 80%;
-    margin: 20px auto 40px auto;
+    background-color: gray;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 0;
-    margin: 8px;
-    margin-right: 20px;
+menu {
+    display: none;
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 10px;
-    padding: 15px;
+menu > ul {
+    list-style-type: none;
 }
 
-nav ul li a {
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
     color: white;
-    transition-duration: 0.5;
-    padding: 8px;
+    text-align: center;
 }
 
-nav ul li a:hover {
-    background-color: #D1FFFE;
-    border-radius: 5px;
-    color: #0A8F8D;
+menu > ul > li > a:hover {
+    background-color: rgb(107, 107, 107);
+    border-radius: 10px;
 }
+
+
+i#burger {
+    background-color: gray;;
+    color: white;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burger:hover {
+    color: black;
+}
+
+
+
 
 main {
-    width: 80%;
-    margin: 0 auto; 
+    width: 90vw;
+    /*background-color: white;*/
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+/*-------------HOME--------------*/
 
 section.home {
     background-color: #8F8B89;
@@ -59,6 +76,7 @@ section.home {
     display: flex;
     align-items: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 section.home img {
@@ -90,20 +108,38 @@ button.contato {
     height: 30px;
 }
 
+
+/*-------------ABOUT--------------*/
+
 section.about {
     background-color: #8F8B89;
     border-radius: 15px;
-    padding: 20px;
-    margin: 40px auto 40px auto;
+    margin-bottom: 30px;
+    
 }
 
+section.about > h2 {
+    padding: 10px;
+    text-align: center;
+}
 
-.about-text {
+section.about > h3 {
+    
+    padding-top: 20px;
     margin-left: 20px;
-    text-align: justify;
-    color: white;
-    margin-right: 20px;
 }
+
+section.about > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 0px 20px 30px 20px;
+}
+
+
+
+/*-------------SKILLS--------------*/
 
 .skills h2 {
     /*margin-left: 20px;*/
@@ -159,40 +195,3 @@ section.about {
 }
 
 
-menu {
-    display: none;
-    justify-content: right;
-}
-
-menu > ul {
-    display: block;
-    padding: 0;
-    margin: 0;
-}
-
-#menu {
-    background-color: #8F8B89;
-    color: white;
-    display: block;
-    text-align: right;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-#menu:hover {
-    background-color: white;
-    color: black;
-}
-
-
-@media screen and (min-width: 900px) {
-    #menu {
-        display: none;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-    
-}

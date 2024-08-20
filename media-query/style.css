@@ -1,0 +1,25 @@
+/*
+Typical Devide Breakpoints
+
+Pequenas Telas: até 600px
+Celular: de 600px a 768px
+Tablet: de 768px a 992px
+Desktop: de 992px a 1200px
+Grandes Telas (TV): acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) {
+    i#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+    
+}

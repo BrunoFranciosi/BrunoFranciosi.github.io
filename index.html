@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Bruno Franciosi</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query/style.css">
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <nav>
-            <span id="menu" class="material-icons" onclick="clickMenu()">menu</span>
-            <menu id="itens">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </menu>
-        </nav>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projeto</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
         <section class="home">
@@ -40,21 +38,19 @@
                 </div>
             </div>
         </section>
-        <section class="about">
-            <div class="about-text">
-                <p>Sobre Mim</p>
-                <h1>Estudante de Ciência da Computação</h1>
-                <p>Você não vai acreditar. Mas você cabia aqui. Eu segurava você e dizia para sua mãe “Esse menino vai ser o melhor menino do mundo". "Esse menino vai ser melhor do que qualquer um que conhecemos.”. E você cresceu bom, maravilhoso.
+        
 
-                    Aí chegou a hora de você ser adulto e conquistar o mundo. E conquistou. Mas em algum ponto desse percurso, você mudou. Você deixou de ser você.
-                    
-                    Agora deixa as pessoas botarem o dedo na sua cara e dizer que você não é bom. Eu vou te dizer uma coisa que você já sabe: O mundo não é um grande arco-íris. É um lugar sujo, é um lugar cruel. Que não quer saber o quanto você é durão. Vai botar você de joelhos e você vai ficar de joelhos para sempre se você deixar.
-                    
-                    Você, eu, ninguém vai bater tão duro como a vida. Mas não se trata de bater duro. Se trata de quanto você aguenta apanhar e seguir em frente. O quanto você é capaz de aguentar e continuar tentando. É assim que se consegue vencer.
-                    
-                    Agora se você sabe o seu valor, então vá atrás do que você merece. Mas tem que ter disposição para apanhar. E nada de apontar dedos, dizer que você não consegue por causa dele ou dela ou de quem seja. Só covardes fazem isso e você não é covarde. Você é melhor do que isso!</p>
-            </div>
+
+
+        <section class="about">
+            <h3>Sobre Mim</h3>
+            <h2>Estudante de Ciencia da Computação</h2>
+            <p>Você não vai acreditar. Mas você cabia aqui. Eu segurava você e dizia para sua mãe “Esse menino vai ser o melhor menino do mundo". "Esse menino vai ser melhor do que qualquer um que conhecemos.”. E você cresceu bom, maravilhoso. Aí chegou a hora de você ser adulto e conquistar o mundo. E conquistou. Mas em algum ponto desse percurso, você mudou. Você deixou de ser você. Agora deixa as pessoas botarem o dedo na sua cara e dizer que você não é bom. Eu vou te dizer uma coisa que você já sabe: O mundo não é um grande arco-íris. É um lugar sujo, é um lugar cruel. Que não quer saber o quanto você é durão. Vai botar você de joelhos e você vai ficar de joelhos para sempre se você deixar. Você, eu, ninguém vai bater tão duro como a vida. Mas não se trata de bater duro. Se trata de quanto você aguenta apanhar e seguir em frente. O quanto você é capaz de aguentar e continuar tentando. É assim que se consegue vencer. Agora se você sabe o seu valor, então vá atrás do que você merece. Mas tem que ter disposição para apanhar. E nada de apontar dedos, dizer que você não consegue por causa dele ou dela ou de quem seja. Só covardes fazem isso e você não é covarde. Você é melhor do que isso!</p>
         </section>
+
+
+
+
         <section class="skills">
             <article>
                 <div id="skills">
@@ -101,22 +97,29 @@
                 </div>
             </article>
         </section>
+
+
+
+
+
     </main>
     <script>
 
         function mudouTamanho() {
-            if (window.innerWidth >= 900) {
-                itens.style.display = 'block';
+            let menu = document.querySelector('menu');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';
             } else {
-                itens.style.display = 'none';
+                menu.style.display = 'none';
             }
         }
 
         function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none';
+            let menu = document.querySelector('menu');
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none';
             } else {
-                itens.style.display = 'block';
+                menu.style.display = 'block';
             }
         }
     </script>
