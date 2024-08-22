@@ -61,7 +61,7 @@ i#burger:hover {
 
 main {
     width: 90vw;
-    /*background-color: white;*/
+    background-color: white;
     margin: auto;
     margin-top: 30px;
     padding: 10px;
@@ -208,6 +208,75 @@ section.about > p {
 
 
 
+/*PROTIFOLIO*/
+
+.portfolio-section {
+    background-color: #8F8B89;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.portfolio-section h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+    color: white;
+    flex-grow: 1;
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+
+.project-buttons {
+    margin-top: 10px;
+}
+
+.project-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.view-project-button {
+    background-color: #F0F0F0;
+    color: black;
+}
+
+.view-repo-button {
+    background-color: #000;
+    color: white;
+}
+
+.tech-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.tech-icons img {
+    width: 30px;
+    height: 30px;
+}
 
 
 
