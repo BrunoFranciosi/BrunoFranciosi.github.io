@@ -6,14 +6,19 @@
     font-family: 'Lexend', cursive;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body, html {
-    background-color: lightgray;
+    background-color: #393F4A;
+}
+
+html {
+    font-size: 16px;
 }
 
 header {
-    background-color: gray;
+    background-color: #DCD2CC;
     width: 85vw;
     margin: auto;
     margin-top: 20px;
@@ -33,18 +38,23 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: #181722;
     text-align: center;
 }
 
 menu > ul > li > a:hover {
-    background-color: rgb(107, 107, 107);
+    background-color: #8A7875;
     border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
 i#burger {
-    background-color: gray;;
+    background-color: #DCD2CC;
     color: white;
     display: block;
     text-align: right;
@@ -71,7 +81,7 @@ main {
 /*-------------HOME--------------*/
 
 section.home {
-    background-color: #8F8B89;
+    background-color: #DCD2CC;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -90,7 +100,7 @@ section.home img {
 }
 
 .home-text h1 {
-    color: #D1FFFE;
+    color: #181722;
     margin-top: 5px;
 }
 
@@ -122,7 +132,7 @@ button.contato:hover {
 /*-------------ABOUT--------------*/
 
 section.about {
-    background-color: #8F8B89;
+    background-color: #DCD2CC;
     border-radius: 15px;
     margin-bottom: 30px;
     
@@ -153,7 +163,7 @@ section.about > p {
 
 .skills h2 {
     /*margin-left: 20px;*/
-    color: white;
+    color: #181722;
     text-align: center;
 }
 
@@ -161,9 +171,9 @@ section.about > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #8F8B89;
+    background-color: #DCD2CC;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 
 #skills > h2, h4 {
@@ -179,12 +189,12 @@ section.about > p {
 #skills .category div {
     display: inline-block;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 #skills .category div img {
-    width: 50px;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 
 #skills .category div span {
@@ -206,26 +216,35 @@ section.about > p {
 }
 
 
+@media screen and (min-width: 768px) {
+    #skills .category div img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
 
 
 /*PROTIFOLIO*/
 
 .portfolio-section {
-    background-color: #8F8B89;
+    background-color: #DCD2CC;
     border-radius: 15px;
     padding: 20px;
     margin-top: 30px;
 }
 
 .portfolio-section h1 {
-    color: white;
+    color: #181722;
     text-align: left;
     margin-bottom: 20px;
 }
 
 .portfolio-item {
     display: flex;
-    background-color: #2E2E2E;
+    background-color: #181722;
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -279,6 +298,13 @@ section.about > p {
 }
 
 
+/* Improve button responsiveness */
+button, .project-buttons a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
 
 
 
@@ -315,17 +341,16 @@ div.projetos > a:hover {
 
 /*-------------CONTACT--------------*/
 
-
 .contact-section {
-    background-color: #8F8B89;
-    border-radius: 15px;
+    background-color: #DCD2CC;
+    border-radius: 10px;
     margin-top: 30px;
     padding: 20px;
 }
 
 
 .contact-section h1 {
-    color: white;
+    color: #181722;
     text-align: center;
 }
 
@@ -352,4 +377,32 @@ div.projetos > a:hover {
     display: flex;
     gap: 5px;
     margin-left: auto;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
