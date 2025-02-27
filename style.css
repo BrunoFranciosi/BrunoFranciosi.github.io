@@ -18,7 +18,7 @@ html {
 }
 
 header {
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     width: 85vw;
     margin: auto;
     margin-top: 20px;
@@ -43,7 +43,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: #8A7875;
+    background-color: #DCD2CC;
     border-radius: 10px;
 }
 
@@ -54,8 +54,7 @@ img {
 
 
 i#burger {
-    background-color: #DCD2CC;
-    color: white;
+    color: #393F4A;
     display: block;
     text-align: right;
     padding: 10px;
@@ -81,7 +80,7 @@ main {
 /*-------------HOME--------------*/
 
 section.home {
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -105,15 +104,16 @@ section.home img {
 }
 
 button.contato {
-    background-color: #62DBD8;
+    background-color: #181722;
     border-radius: 20px;
     margin-top: 10px;
     padding: 5px;
+    color: #EBEBEB;
 }
 
 button.contato:hover {
-    background-color: #D1FFFE;
-    color: black;
+    background-color: #393F4A;
+    color: #EBEBEB;
     cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ button.contato:hover {
 /*-------------ABOUT--------------*/
 
 section.about {
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     border-radius: 15px;
     margin-bottom: 30px;
     
@@ -171,7 +171,7 @@ section.about > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     border-radius: 15px;
     padding: 10px;
 }
@@ -230,7 +230,7 @@ section.about > p {
 /*PROTIFOLIO*/
 
 .portfolio-section {
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     border-radius: 15px;
     padding: 20px;
     margin-top: 30px;
@@ -322,12 +322,16 @@ div.projetos {
 
 div.projetos > a {
     text-decoration: none;
-    color: black;
+    color: #EBEBEB;
+    border: 3px solid #181722;
+    border-radius: 25px;
+    padding: 5px 10px;
 }
 
 div.projetos > a:hover {
-    color: green;
-    text-decoration: underline;
+    border-color: #DCD2CC;
+    background-color: #181722;
+    transition: 0.5s;
 }
 
 
@@ -342,7 +346,7 @@ div.projetos > a:hover {
 /*-------------CONTACT--------------*/
 
 .contact-section {
-    background-color: #DCD2CC;
+    background-color: #EBEBEB;
     border-radius: 10px;
     margin-top: 30px;
     padding: 20px;
