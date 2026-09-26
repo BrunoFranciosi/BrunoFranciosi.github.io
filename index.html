@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,187 +13,458 @@
         <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
         <menu id="itens">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio-section">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio-section">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
             </ul>
         </menu>
     </header>
     <main>
+        <!-- ==============================
+             HOME
+        ============================== -->
         <section class="home" id="home">
-            <img src="images/brn.jpg" alt="eu">
+            <img
+                src="images/brn.jpg"
+                alt="eu"
+            >
             <div class="home-text">
                 <p>Oi, eu sou o Bruno</p>
-                <h1>Bacharel em Ciência da Computação</h1>
-                <button class="contato" onclick="location.href='#contact'">Contate me</button>
-                <div class="buttons">
-                    <a href="https://github.com/BrunoFranciosi" target="_blank" rel="external" class="button">
-                        <img src="images/github.png" alt="GitHub" class="icon">
+                <h1>
+                    Bacharel em Ciência da Computação
+                </h1>
+                <div class="home-buttons">
+                    <button
+                        class="contato"
+                        onclick="location.href='#contact'"
+                    >
+                        Contate-me
+                    </button>
+                    <a
+                        href="curriculo.html"
+                        class="curriculum-button"
+                    >
+                        Currículo
                     </a>
-                    <a href="https://www.linkedin.com/in/bruno-franciosi-299352302/" target="_blank" rel="external" class="button">
-                        <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+                </div>
+
+                <!-- REDES SOCIAIS -->
+
+                <div class="buttons">
+                    <a
+                        href="https://github.com/BrunoFranciosi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button"
+                    >
+                        <img
+                            src="images/github.png"
+                            alt="GitHub"
+                            class="icon"
+                        >
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/bruno-franciosi-299352302/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button"
+                    >
+                        <img
+                            src="images/linkedin.png"
+                            alt="LinkedIn"
+                            class="icon"
+                        >
                     </a>
                 </div>
             </div>
         </section>
-        
 
 
+        <!-- ==============================
+             SOBRE
+        ============================== -->
 
         <section class="about" id="sobre">
             <h3>Sobre Mim</h3>
-            <h2>Bruno Henrique Garcia Franciosi</h2>
-            <p>Sou formado em Ciência da Computação pela Universidade Estadual de Maringá, onde me aprofundei em áreas que despertaram meu maior interesse, como Banco de Dados, Inteligência Artificial e Redes de Computadores.
+            <h2>
+                Bruno Henrique Garcia Franciosi
+            </h2>
+            <p>
+                Sou bacharel em Ciência da Computação pela Universidade
+                Estadual de Maringá e atuo há cerca de um ano como
+                desenvolvedor de software.
 
-                Apesar de ainda não ter experiência profissional na área, minha jornada acadêmica me ensinou a resolver problemas complexos, trabalhar em equipe e aprender rapidamente novas tecnologias. Tenho grande entusiasmo por programação e estou sempre buscando novos desafios para expandir meu conhecimento e minhas habilidades práticas.
-                
-                Atualmente, estou focado em consolidar minha experiência como desenvolvedor, construindo projetos práticos e explorando diferentes tecnologias. Estou aberto a oportunidades onde possa contribuir e, ao mesmo tempo, continuar evoluindo como profissional.</p>
+                Durante minha formação, desenvolvi interesse principalmente
+                por desenvolvimento de software, Banco de Dados,
+                Inteligência Artificial e Redes de Computadores.
+
+                Desde então, venho aprofundando meus conhecimentos por meio
+                da experiência profissional e também de projetos pessoais.
+
+                Atualmente, trabalho como desenvolvedor júnior, onde tenho
+                tido a oportunidade de colocar em prática meus conhecimentos,
+                aprender novas tecnologias e participar do desenvolvimento
+                e manutenção de aplicações.
+
+                Nesse período, evoluí principalmente em desenvolvimento
+                backend, APIs, bancos de dados e ferramentas utilizadas no
+                dia a dia de desenvolvimento.
+
+                Fora do trabalho, continuo desenvolvendo projetos para
+                aprimorar minhas habilidades e conhecer novas tecnologias.
+
+                Sou movido por curiosidade e pela vontade constante de
+                aprender mais.
+
+                Estou sempre em busca de novos desafios que me permitam
+                evoluir como profissional, contribuindo com o que já aprendi
+                e absorvendo o conhecimento de quem está mais à frente
+                na carreira.
+            </p>
         </section>
 
 
-
+        <!-- ==============================
+             SKILLS
+        ============================== -->
 
         <section class="skills">
             <article>
                 <div id="skills">
                     <h2>Skills</h2>
-                    <div class="category">
-                    <h4 class="category">Linguagens e tecnologias</h4>
-                    <div>
-                        <img src="images/python.png" alt="python">
-                        <span>PYTHON</span>
+
+                    <!-- PRIMEIRA LINHA -->
+
+                    <div class="skills-row">
+
+                        <!-- LINGUAGENS -->
+
+                        <div class="category">
+                            <h4>Linguagens</h4>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />         
+                                <span>PYTHON</span>
+                            </div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                <span>C++</span>
+                            </div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                                <span>C#</span>
+                            </div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                <span>JAVASCRIPT</span>
+                            </div>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                    alt="TypeScript"
+                                >
+                                <span>TYPESCRIPT</span>
+                            </div>
+                        </div>
+
+                        <!-- BACKEND -->
+
+                        <div class="category">
+                            <h4>Backend</h4>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                                    alt="Node.js"
+                                >
+                                <span>NODE.JS</span>
+                            </div>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+                                    alt="NestJS"
+                                >
+                                <span>NESTJS</span>
+                            </div>
+                        </div>
+
+
+                        <!-- BANCO DE DADOS -->
+
+                        <div class="category">
+                            <h4>Banco de Dados</h4>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                                    alt="PostgreSQL"
+                                >
+                                <span>POSTGRESQL</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/c-.png" alt="cpp">
-                        <span>C++</span>
+
+
+                    <!-- SEGUNDA LINHA -->
+
+                    <div class="skills-row">
+
+
+                        <!-- FERRAMENTAS -->
+
+                        <div class="category">
+                            <h4>Ferramentas</h4>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                                    alt="Git"
+                                >
+                                <span>GIT</span>
+                            </div>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                    alt="GitHub"
+                                >
+                                <span>GITHUB</span>
+                            </div>
+                        </div>
+
+
+                        <!-- DEPLOY -->
+
+                        <div class="category">
+                            <h4>Deploy / Infraestrutura</h4>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                                    alt="AWS"
+                                >
+                                <span>AWS</span>
+                            </div>
+                            <div>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg"
+                                    alt="Heroku"
+                                >
+                                <span>HEROKU</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/c-sharp.png" alt="csharp">
-                        <span>C#</span>
-                    </div>
-                    <div>
-                        <img src="images/html.png" alt="html">
-                        <span>HTML</span>
-                    </div>
-                    <div>
-                        <img src="images/css.png" alt="css">
-                        <span>CSS</span>
-                    </div>
-                    <div>
-                        <img src="images/js.png" alt="js">
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    <div>
-                        <img src="images/git.png" alt="git">
-                        <span>GIT</span>
-                    </div>
-                    <div>
-                        <img src="images/github.png" alt="github">
-                        <span>GITHUB</span>
-                    </div>
-                    <div>
-                        <img src="images/mysql.png" alt="mysql">
-                        <span>MYSQL</span>
-                    </div>
-                </div>
                 </div>
             </article>
         </section>
 
 
+        <!-- ==============================
+             PORTFÓLIO
+        ============================== -->
 
-
-
-
-
-        <section class="portfolio-section" id="portfolio-section">
+        <section
+            class="portfolio-section"
+            id="portfolio-section"
+        >
             <h1>Projetos</h1>
+
+
+            <!-- PROJETO 1 -->
+
             <div class="portfolio-item">
-                <img src="images/delet.png" alt="Secure Auth" class="project-image">
+                <img
+                    src=""
+                    alt="Projeto"
+                    class="project-image"
+                >
                 <div class="project-details">
                     <h2>Teste</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae aspernatur odit cumque necessitatibus facere, exercitationem atque voluptate quisquam, sint non hic! Sequi voluptate sit fugit. Dolores, vero iste! Ab.</p>
-                    <div class="project-buttons">
-                        <a href="#" class="view-project-button">Ver Projeto</a>
-                        <a href="#" class="view-repo-button">< Repositório /></a>
-                    </div>
-                    <div class="tech-icons">
-                        <img src="images/python.png" alt="JavaScript">
-                        <img src="images/python.png" alt="React">
-                        <img src="images/python.png" alt="Firebase">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Debitis recusandae aspernatur
+                        odit cumque necessitatibus facere,
+                        exercitationem atque voluptate quisquam,
+                        sint non hic!
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-buttons">
+                            <a
+                                href="#"
+                                class="view-project-button"
+                            >
+                                Ver Projeto
+                            </a>
+                            <a
+                                href="#"
+                                class="view-repo-button"
+                            >
+                                &lt; Repositório /&gt;
+                            </a>
+                        </div>
+                        <div class="tech-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- PROJETO 2 -->
+
             <div class="portfolio-item">
-                <img src="images/delet.png" alt="Sistema de chamados" class="project-image">
+                <img
+                    src="images/fightgame.png"
+                    alt="Jogo de Luta"
+                    class="project-image"
+                >
                 <div class="project-details">
-                    <h2>Sistema de chamados</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus modi similique rem voluptate delectus hic vero odio natus, cupiditate debitis est quod praesentium eos alias saepe, eaque quia, at libero.</p>
-                    <div class="project-buttons">
-                        <a href="#" class="view-project-button">Ver Projeto</a>
-                        <a href="#" class="view-repo-button">< Repositório /></a>
-                    </div>
-                    <div class="tech-icons">
-                        <img src="images/python.png" alt="JavaScript">
-                        <img src="images/python.png" alt="React">
-                        <img src="images/python.png" alt="Firebase">
+                    <h2>Jogo de Luta</h2>
+                    <p>
+                        Jogo de luta desenvolvido em JavaScript utilizando
+                        a API Canvas do HTML5.
+
+                        O projeto foi iniciado a partir de um tutorial e
+                        posteriormente expandido e personalizado com
+                        funcionalidades e alterações próprias.
+
+                        Durante o desenvolvimento, foram trabalhados
+                        conceitos de animação, manipulação de eventos,
+                        lógica de combate e renderização de elementos
+                        diretamente no Canvas.
+                    </p>
+                    <div class="project-footer">
+                        <div class="project-buttons">
+                            <a
+                                href="https://brunofranciosi.github.io/js-fighting-game/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="view-project-button"
+                            >
+                                Ver Projeto
+                            </a>
+                            <a
+                                href="https://github.com/BrunoFranciosi/js-fighting-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="view-repo-button"
+                            >
+                                &lt; Repositório /&gt;
+                            </a>
+                        </div>
+                        <div class="tech-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
 
-
-
-
-
-
-
+        <!-- ==============================
+             TODOS OS PROJETOS
+        ============================== -->
 
         <div class="projetos">
-            <a href="https://github.com/BrunoFranciosi" target="_blank" rel="external">Ver todos os projetos</a>
+            <a
+                href="https://github.com/BrunoFranciosi"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver todos os projetos
+            </a>
         </div>
-        
 
 
+        <!-- ==============================
+             CONTATO
+        ============================== -->
 
-
-
-
-        <section class="contact-section" id="contact">
+        <section
+            class="contact-section"
+            id="contact"
+        >
             <h1>Contato</h1>
-        
+
             <div class="contact-info">
                 <div class="contact-item">
-                    <img src="images/phone.png" alt="phone" class="icon">
-                    <span>(44) 9 9987-4183</span>
+                    <img
+                        src="images/phone.png"
+                        alt="Telefone"
+                        class="icon"
+                    >
+                    <span>
+                        (44) 9 9987-4183
+                    </span>
                 </div>
                 <div class="contact-item">
-                    <img src="images/email.png" alt="phone" class="icon">
-                    <span>brunohfranciosi@gmail.com</span>
+                    <img
+                        src="images/email.png"
+                        alt="E-mail"
+                        class="icon"
+                    >
+                    <span>
+                        brunohfranciosi@gmail.com
+                    </span>
                 </div>
                 <div class="contact-item location-icons">
-                    <img src="images/location.png" alt="location" class="icon">
-                    <span>Maringá - PR - Brasil</span>
+                    <img
+                        src="images/location.png"
+                        alt="Localização"
+                        class="icon"
+                    >
+                    <span>
+                        Maringá - PR - Brasil
+                    </span>
                     <div class="contact-icons">
-                        <a href="https://github.com/BrunoFranciosi" target="_blank"><img src="images/github.png" alt="GitHub" class="icon"></a>
-                        <a href="https://www.linkedin.com/in/bruno-franciosi-299352302/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="icon"></a>
+                        <a
+                            href="https://github.com/BrunoFranciosi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="images/github.png"
+                                alt="GitHub"
+                                class="icon"
+                            >
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/bruno-franciosi-299352302/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="images/linkedin.png"
+                                alt="LinkedIn"
+                                class="icon"
+                            >
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
-
     </main>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    ============================== -->
+
     <script>
 
         function mudouTamanho() {
-            let menu = document.querySelector('menu');
+            const menu = document.querySelector('menu');
             if (window.innerWidth >= 769) {
                 menu.style.display = 'block';
             } else {
@@ -202,8 +473,8 @@
         }
 
         function clickMenu() {
-            let menu = document.querySelector('menu');
-            if (menu.style.display == 'block') {
+            const menu = document.querySelector('menu');
+            if (menu.style.display === 'block') {
                 menu.style.display = 'none';
             } else {
                 menu.style.display = 'block';

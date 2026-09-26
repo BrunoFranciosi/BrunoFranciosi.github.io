@@ -4,24 +4,34 @@
 
 * {
     font-family: 'Lexend', cursive;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-body, html {
-    background-color: #393F4A;
 }
 
 html {
     font-size: 16px;
 }
 
+body,
+html {
+    background-color: #393F4A;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
 header {
     background-color: #EBEBEB;
     width: 85vw;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
     padding: 10px;
     border-radius: 10px;
 }
@@ -47,12 +57,6 @@ menu > ul > li > a:hover {
     border-radius: 10px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 i#burger {
     color: #393F4A;
     display: block;
@@ -66,18 +70,21 @@ i#burger:hover {
 }
 
 
-
+/* ==============================
+   MAIN
+============================== */
 
 main {
     width: 80vw;
-    /*background-color: white;*/
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
     padding: 10px;
     border-radius: 10px;
 }
 
-/*-------------HOME--------------*/
+
+/* ==============================
+   HOME
+============================== */
 
 section.home {
     background-color: #EBEBEB;
@@ -103,19 +110,45 @@ section.home img {
     margin-top: 5px;
 }
 
-button.contato {
-    background-color: #181722;
-    border-radius: 20px;
+
+/* ==============================
+   BOTÕES DA HOME
+============================== */
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 10px;
-    padding: 5px;
+}
+
+button.contato,
+.curriculum-button {
+    display: inline-block;
+    background-color: #181722;
+    color: #EBEBEB;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.contato:hover,
+.curriculum-button:hover {
+    background-color: #393F4A;
     color: #EBEBEB;
 }
 
-button.contato:hover {
-    background-color: #393F4A;
-    color: #EBEBEB;
-    cursor: pointer;
-}
+
+/* ==============================
+   REDES SOCIAIS
+============================== */
 
 .buttons {
     margin-top: 20px;
@@ -129,13 +162,14 @@ button.contato:hover {
 }
 
 
-/*-------------ABOUT--------------*/
+/* ==============================
+   ABOUT
+============================== */
 
 section.about {
     background-color: #EBEBEB;
     border-radius: 15px;
     margin-bottom: 30px;
-    
 }
 
 section.about > h2 {
@@ -144,7 +178,6 @@ section.about > h2 {
 }
 
 section.about > h3 {
-    
     padding-top: 20px;
     margin-left: 20px;
 }
@@ -152,82 +185,75 @@ section.about > h3 {
 section.about > p {
     text-align: justify;
     text-indent: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-    margin: 0px 20px 30px 20px;
+    padding: 10px 10px 20px;
+    margin: 0 20px 30px;
 }
 
 
-
-/*-------------SKILLS--------------*/
+/* ==============================
+   SKILLS
+============================== */
 
 .skills h2 {
-    /*margin-left: 20px;*/
     color: #181722;
     text-align: center;
 }
 
 #skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: #EBEBEB;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
 }
 
-#skills > h2, h4 {
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;
+#skills > h2 {
+    margin-bottom: 25px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 35px;
+}
+
+.skills-row:last-child {
+    margin-bottom: 0;
 }
 
 #skills .category {
-    margin-top: 2px;
+    text-align: center;
+    min-width: 150px;
+}
+
+#skills .category h4 {
+    color: #181722;
+    margin-bottom: 15px;
 }
 
 #skills .category div {
     display: inline-block;
     text-align: center;
     margin: 5px;
+    vertical-align: top;
 }
 
 #skills .category div img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 #skills .category div span {
     display: block;
-}
-
-#skills > div {
-    text-align: center;
-    margin: 10px;
-}
-
-#skills > div > img{
-    width: 50px;
-    height: auto;
-}
-
-#skills > div > span {
-    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
 }
 
 
-@media screen and (min-width: 768px) {
-    #skills .category div img {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-
-
-
-
-/*PROTIFOLIO*/
+/* ==============================
+   PORTFÓLIO
+============================== */
 
 .portfolio-section {
     background-color: #EBEBEB;
@@ -248,32 +274,74 @@ section.about > p {
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden;
+    min-height: 350px;
 }
+
+
+/* ==============================
+   IMAGEM DO PROJETO
+============================== */
 
 .project-image {
-    width: 40%;
-    object-fit: cover;
+    width: 50%;
+    height: 350px;
+    object-fit: contain;
+    background-color: #101116;
+    display: block;
 }
 
+
+/* ==============================
+   DETALHES DO PROJETO
+============================== */
+
 .project-details {
-    padding: 20px;
+    width: 50%;
+    padding: 25px;
     color: white;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-details h2 {
-    margin-top: 0;
+    margin-bottom: 15px;
 }
 
+.project-details p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   RODAPÉ DO PROJETO
+============================== */
+
+.project-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+/* ==============================
+   BOTÕES DOS PROJETOS
+============================== */
+
 .project-buttons {
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .project-buttons a {
+    display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 15px;
-    margin-right: 10px;
+    transition: all 0.3s ease;
 }
 
 .view-project-button {
@@ -286,32 +354,35 @@ section.about > p {
     color: white;
 }
 
+.view-project-button:hover {
+    background-color: #DCD2CC;
+}
+
+.view-repo-button:hover {
+    background-color: #333;
+}
+
+
+/* ==============================
+   ÍCONES DAS TECNOLOGIAS
+============================== */
+
 .tech-icons {
-    margin-top: 10px;
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .tech-icons img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
 
 
-/* Improve button responsiveness */
-button, .project-buttons a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-}
-
-
-
-
-
-
-
-
+/* ==============================
+   TODOS OS PROJETOS
+============================== */
 
 div.projetos {
     padding: 5px;
@@ -335,15 +406,9 @@ div.projetos > a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-/*-------------CONTACT--------------*/
+/* ==============================
+   CONTATO
+============================== */
 
 .contact-section {
     background-color: #EBEBEB;
@@ -351,7 +416,6 @@ div.projetos > a:hover {
     margin-top: 30px;
     padding: 20px;
 }
-
 
 .contact-section h1 {
     color: #181722;
@@ -384,15 +448,9 @@ div.projetos > a:hover {
 }
 
 
-
-
-
-
-@media screen and (min-width: 768px) {
-    html {
-        font-size: 18px;
-    }
-}
+/* ==============================
+   TIPOGRAFIA
+============================== */
 
 h1 {
     font-size: 1.8rem;
@@ -409,4 +467,17 @@ h3 {
 p {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+
+/* ==============================
+   DESKTOP
+============================== */
+
+@media screen and (min-width: 768px) {
+
+    html {
+        font-size: 18px;
+    }
+
 }
